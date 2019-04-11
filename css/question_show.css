@@ -1,0 +1,27 @@
+.container{
+    padding: 1%;
+}
+.content{
+    color: #fff;
+    font-weight: bold;
+    width: 100%;
+    padding: 2%;
+    background-color:#3e617e;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    font-size: 20px;
+}
+
+.choice{
+    color: #fff;
+    font-weight: bold;
+    width: 100%;
+    padding: 2%;
+    background-color: #d37509;
+    border-radius: 5px;
+    border: 1px solid #eee;   
+}
+.txt{
+    font-weight: bold;
+    font-size: 25px;
+}
