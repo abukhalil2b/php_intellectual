@@ -72,7 +72,7 @@ if(!isset($_SESSION['user']))
 		<input type="hidden" value="<?php echo $row['ans'] ?>" name="ans">
 		<button class="choice"><span class="txt"><?php echo $row["d"] ?></span></button>
 	</form>
-
+<h4>برعاية: مؤسسة الفلق لخدمات الحاسب الآلي</h4>
 </div>
 <?php
 
