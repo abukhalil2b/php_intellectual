@@ -1,4 +1,4 @@
-#phone,#password,#submit{
+input,button{
 	display: block;
 	height: 60px; 
 	text-align:  center; 
