@@ -5,7 +5,6 @@ if(isset($_SESSION['user']))
 ?>
 <!DOCTYPE html>
 <html dir="rtl">
-
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,18 +14,11 @@ if(isset($_SESSION['user']))
 	<link rel="stylesheet" href="css/login.css">
 	<title>register</title>
 </head>
-
 <body>
-
 <?php
     require_once('./connection.php');
-
     require_once('./header.php')
 ?>
-
-
- 
-
 <div class="container">
     <form method="POST" action="check_register.php">
         <input  placeholder="الاسم" class="form-control" name="first_name"  required >
@@ -35,14 +27,12 @@ if(isset($_SESSION['user']))
         <input  type="number"  placeholder="الهاتف" class="form-control" name="phone"  required >
         <input  type="number" placeholder="كلمة المرور" class="form-control" name="password" required>
         <button type="submit" class="btn-login">
-            دخول
+        تسجيل جديد
         </button>
     </form>
     <h4>برعاية: مؤسسة الفلق لخدمات الحاسب الآلي</h4>
     
 </div>
 
-
 </body>
-
 </html>
