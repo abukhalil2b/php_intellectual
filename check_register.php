@@ -9,7 +9,7 @@ if(isset($_POST['phone'])){
 	$password   = $_POST['password'];
 	$wilaya     = $_POST['wilaya'];
     
-    $sql_check = "SELECT * FROM `users` WHERE phone = $phone"
+    $sql_check = "SELECT * FROM `users` WHERE phone = $phone";
     $result = $conn->query($sql_check);
     if($result->num_rows==1){
         header('Location:register_done.php');die();
