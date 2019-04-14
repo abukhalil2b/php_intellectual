@@ -12,6 +12,10 @@ if(!isset($_SESSION['user']))
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
     <style>
+    body{
+        background-color:#00584c;
+        color:#00584c;
+    }
     h1{
         padding:5%;
         border:solid 1px #147129;
@@ -27,7 +31,7 @@ if(!isset($_SESSION['user']))
 
 <body>
     <div class="container">
-<h1>شكرا لك تم الإجابة</h1>
+<h1>شكرا لك.. تم الإجابة</h1>
     </div>
 </body>
 
