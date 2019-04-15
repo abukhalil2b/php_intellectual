@@ -16,7 +16,7 @@ if(isset($_POST['phone'])){
 		header('Location:question_show.php');
 	}
 	else{
-		header('Location:login.php');
+		header('Location:register.php');
 	}
 	
 
