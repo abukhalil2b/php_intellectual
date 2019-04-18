@@ -8,7 +8,9 @@ if(isset($_POST['phone'])){
 	$phone      = $_POST['phone'];
 	$password   = $_POST['password'];
 	$wilaya     = $_POST['wilaya'];
-    
+    if(strlen($phone) !=8){
+		die("<h1 style='direction:rtl'>تأكد من الهاتف</h1>");
+	}
     $sql_check = "SELECT * FROM `users` WHERE phone = $phone";
     $result = $conn->query($sql_check);
     if($result->num_rows==1){
