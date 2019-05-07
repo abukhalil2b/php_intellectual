@@ -72,7 +72,12 @@ if(!isset($_SESSION['user']))
 		<input type="hidden" value="<?php echo $row['ans'] ?>" name="ans">
 		<button class="choice"><span class="txt"><?php echo $row["d"] ?></span></button>
 	</form>
-<h4>برعاية: مؤسسة الفلق لخدمات الحاسب الآلي</h4>
+
+<h4 class="question-show-note"> لمشاهدة القرعة </h4>
+<h4 class="question-show-note"> لمعرفة الفائز </h4> 
+<h4 class="question-show-note"> لاستلام الرسائل الجماعية </h4> 
+<h4 class="question-show-note"> يجب حفظ رقم الجوال التالي باسم سؤال الاسبوع 92242599 </h4>
+
 </div>
 <?php
 

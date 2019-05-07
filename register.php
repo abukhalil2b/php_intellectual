@@ -21,7 +21,7 @@ if(isset($_SESSION['user']))
 <?php
     require_once('./connection.php');
     require_once('./header.php');
-    require_once('./_register.php');
+    require_once('./_login.php');
 ?>
 
 </body>
