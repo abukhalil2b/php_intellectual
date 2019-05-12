@@ -27,6 +27,7 @@
 }
 
 .question-show-note{
-    padding: 15px;
+    margin:10px;
     color: #013830;
+    font-weight: bold;
 }

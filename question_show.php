@@ -73,10 +73,11 @@ if(!isset($_SESSION['user']))
 		<button class="choice"><span class="txt"><?php echo $row["d"] ?></span></button>
 	</form>
 
-<h4 class="question-show-note"> لمشاهدة القرعة </h4>
-<h4 class="question-show-note"> لمعرفة الفائز </h4> 
-<h4 class="question-show-note"> لاستلام الرسائل الجماعية </h4> 
-<h4 class="question-show-note"> يجب حفظ رقم الجوال التالي باسم سؤال الاسبوع 92242599 </h4>
+<div class="question-show-note">
+	<h4 >  لمتابعة اخبار المسابقة </h4>
+	<h4 > يجب تخزين رقم الجوال التالي باسم سؤال الاسبوع 92242599 </h4>
+</div>
+
 
 </div>
 <?php
