@@ -13,6 +13,8 @@ if(!isset($_SESSION['user']))
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/question_show.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
 	<title>show question</title>
 </head>
 
@@ -41,36 +43,36 @@ if(!isset($_SESSION['user']))
 
 	<div class="content" > <?php echo $row["content"] ?>  </div>
 
-	<form  method="post" action="answer_send.php">
+	<form class="myform"  method="post" action="answer_send.php">
 		<input type="hidden" name="phone" value="<?php echo $phone ?>">
 		<input type="hidden" value="a" name="choice">
 		<input type="hidden" value="<?php echo $row['id'] ?>" name="question_id">
 		<input type="hidden" value="<?php echo $row['ans'] ?>" name="ans">
-		<button class="choice"><span class="txt"><?php echo $row["a"] ?></span></button>
+		<button id="a" ><span class="txt"><?php echo $row["a"] ?></span></button>
 	</form>
 
-	<form  method="post" action="answer_send.php">
+	<form class="myform"  method="post" action="answer_send.php">
 		<input type="hidden" name="phone" value="<?php echo $phone ?>">
 		<input type="hidden" value="b" name="choice">
 		<input type="hidden" value="<?php echo $row['id'] ?>" name="question_id">
 		<input type="hidden" value="<?php echo $row['ans'] ?>" name="ans">
-		<button class="choice"><span class="txt"><?php echo $row["b"] ?></span></button>
+		<button id="b" ><span class="txt"><?php echo $row["b"] ?></span></button>
 	</form>
 
-	<form  method="post" action="answer_send.php">
+	<form class="myform"  method="post" action="answer_send.php">
 		<input type="hidden" name="phone" value="<?php echo $phone ?>">
 		<input type="hidden" value="c" name="choice">
 		<input type="hidden" value="<?php echo $row['id'] ?>" name="question_id">
 		<input type="hidden" value="<?php echo $row['ans'] ?>" name="ans">
-		<button class="choice"><span class="txt"><?php echo $row["c"] ?></span></button>
+		<button id="c" ><span class="txt"><?php echo $row["c"] ?></span></button>
 	</form>
 
-	<form  method="post" action="answer_send.php">
+	<form class="myform"  method="post" action="answer_send.php">
 		<input type="hidden" name="phone" value="<?php echo $phone ?>">
 		<input type="hidden" value="d" name="choice">
 		<input type="hidden" value="<?php echo $row['id'] ?>" name="question_id">
 		<input type="hidden" value="<?php echo $row['ans'] ?>" name="ans">
-		<button class="choice"><span class="txt"><?php echo $row["d"] ?></span></button>
+		<button id="d" ><span class="txt"><?php echo $row["d"] ?></span></button>
 	</form>
 
 <div class="question-show-note">
@@ -89,6 +91,26 @@ $conn->close();
 
 ?>
 
+<script>
+    $(document).ready(function () {
+
+        $(".myform").submit(function (e) {
+
+            //stop submitting the form to see the disabled button effect
+            //e.preventDefault();
+
+            //disable the submit button
+            $("#a").attr("disabled", true);
+            $("#b").attr("disabled", true);
+            $("#c").attr("disabled", true);
+            $("#d").attr("disabled", true);
+
+     
+            return true;
+
+        });
+    });
+</script>
 
 </body>
 

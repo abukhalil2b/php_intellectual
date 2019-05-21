@@ -1,5 +1,5 @@
 .container{
-    padding: 1%;
+    padding: 1.2%;
 }
 .content{
     color: #fff;
@@ -12,7 +12,7 @@
     font-size: 20px;
 }
 
-.choice{
+#a,#b,#c,#d{
     color: #fff;
     font-weight: bold;
     width: 100%;
